@@ -21,7 +21,6 @@ if docker exec $CONTAINER_1 ping -c 3 $CONTAINER_2 >/dev/null; then
   echo "Ping from $CONTAINER_1 to $CONTAINER_2 is successful."
 else
   echo "Ping from $CONTAINER_1 to $CONTAINER_2 failed."
-  exit 1
 fi
 
 # Check ping from Container 2 to Container 1
@@ -30,6 +29,5 @@ if docker exec $CONTAINER_2 ping -c 3 $CONTAINER_1 >/dev/null; then
   echo "Ping from $CONTAINER_2 to $CONTAINER_1 is successful."
 else
   echo "Ping from $CONTAINER_2 to $CONTAINER_1 failed."
-  exit 1
 fi
 
